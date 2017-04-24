@@ -2,6 +2,7 @@
   <a href="/#!/dashboard">Back</a>
   <hr>
   <h4>Put the questions and options here</h4>
+  <p ng-repeat="error in errors">{{error.message}}</p>
   <form ng-submit="create()">
     <div class="form-group">
       <label for="question">Question</label>
