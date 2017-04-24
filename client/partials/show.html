@@ -1,0 +1,36 @@
+<div class="col-md-10">
+  <a href="/#!/dashboard">Back to Polls</a>
+  <hr>
+  <h4>{{poll.question}}</h4>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>Options</td>
+        <td>Current Vote count</td>
+        <td>Actions</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{poll.option1}}</td>
+        <td>{{poll.count_option1}}</td>
+        <td><button ng-click="vote(1)">Vote</button></td>
+      </tr>
+      <tr>
+        <td>{{poll.option2}}</td>
+        <td>{{poll.count_option2}}</td>
+        <td><button ng-click="vote(2)" name="action">Vote</button></td>
+      </tr>
+      <tr>
+        <td>{{poll.option3}}</td>
+        <td>{{poll.count_option3}}</td>
+        <td><button ng-click="vote(3)" name="action">Vote</button></td>
+      </tr>
+      <tr>
+        <td>{{poll.option4}}</td>
+        <td>{{poll.count_option4}}</td>
+        <td><button ng-click="vote(4)" name="action">Vote</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
